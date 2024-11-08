@@ -4,15 +4,15 @@
     "files": true
   },
   "exclude": [
-    "coverage"
+    "coverage",
+    "build-frontend.js",
+    "jest.config.js",
+    "tailwind.config.js"
   ],
+  "include": ["**/*.ts", "**/*.test.ts", "**/*.spec.ts"],
   "compilerOptions": {
-    "types": [
-      "@types/jest"
-    ],
+    "types": ["jest"],
     "module": "commonjs",
-    "typeRoots": [
-      "./src/backend/types"
-    ]
+    "typeRoots": ["./src/backend/types", "node_modules/@types"]
   }
 }
